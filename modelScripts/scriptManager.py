@@ -1,26 +1,26 @@
 #this officially works with model: distilgpt2
-
+#problem: it's too stupid, abort mission
 import subprocess
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
 # Load the model and tokenizer
-model_name = "distilgpt2"  # Replace with "EleutherAI/gpt-neo-125M" if needed
+model_name = "distilgpt2"  
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
 # Use a pipeline for text generation
 pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_length=50)
 
-# Map user input to commands
+# Map 
 def map_input_to_command(user_input):
     commands = {
         "run backup": "python backup.py",
-        "check disk": "dir",  # Replace with 'df -h' on Linux
-        "list files": "dir",  # Replace with 'ls -la' on Linux
-        "clear": "cls",       # Clear the terminal screen (for Windows)
-        "exit": "exit",       # Close the program
+        "check disk": "dir",  
+        "list files": "dir",  
+        "clear": "cls",       
+        "exit": "exit",      
     }
-    # Return the mapped command or a default if the input doesn't match
+ 
     return commands.get(user_input.lower(), None)
 
 # Execute a shell command
