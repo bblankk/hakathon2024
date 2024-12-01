@@ -15,7 +15,9 @@ def run_command(command):
     except Exception as e:
         print(f"An error occurred: {e}")
 
+
 if __name__ == "__main__":
+    #hardcoded lol
     vimeows_folder =  "W:/hakathon2024/modelScripts/vimeows/SunityAsset2.py"  # Assumes the folder is in the same directory as the script
     runFile = runLlama.runFile  # This should be dynamically set by the output of the runLlama script
 

@@ -13,6 +13,7 @@ python run_cmd.py     //this runs it <3
 (My pet lamma helpes you find some vulnerabilities in your system. )
 (This is the order of script running. Beware the scripts in vimeows, you don't wanna be running those. (wink) (they'll be run anyways, wink2) )
 
+
 Thank you to: 
 Dani - emotional support, coder aura scare my computer into working, actually took my computer out of self-annihilation mode, unfroze my program, etc. (got me sweets)
 G-n Petur Petrov , g-n Kirill Alekseev - Thank you for help with the code, the github, debugging and for hosting!
