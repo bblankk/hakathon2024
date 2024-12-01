@@ -11,13 +11,13 @@ def main():
     response = runLlama.generate_response_with_dynamic_csv(csv_file_path, user_question)
     
     # Step 2: Extract the file name from the response (if response is valid)
-    runFile = str(response).strip()  # Ensure no extra spaces or newlines, but there's no need for this, just in case
+    runFile = response  # Ensure no extra spaces or newlines, but there's no need for this, just in case
     
     print(f"Model chose file: {runFile}")
     
     if runFile:  # If the model responded with a valid filename
         # Step 3: Run the command in run_cmd.py with the chosen file
-        vimeows_folder = "W:/hakathon2024/modelScripts/vimeows/" + runFile  # Example folder
+        vimeows_folder = "W:/hakathon2024/modelScripts/vimeows/SunityAsset2.py" # + runFile 
         # runFilePath = os.path.join(vimeows_folder, runFile)  # Full path to the chosen file
         
         if os.path.isfile(vimeows_folder):
